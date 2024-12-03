@@ -65,7 +65,9 @@ Check the Paths in the Scripts:
 Open ```main.py``` in a text editor and ensure the ```log_dir``` , ```exec_dir``` and ```cs_path``` paths match your CS2 directory:
 
 ```cs_path = "S:\\SteamLibrary\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\console.log" ```
+
 ```log_dir = "S:\\SteamLibrary\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\console.log" ```
+
 ```exec_dir = "S:\\SteamLibrary\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\message.cfg" ```
 
 Run the Bot:
@@ -79,7 +81,7 @@ Run the bot: ```py main.py```
 Test the Bot:
 
 Open CS2, join a game, and type ```!fish``` in the in-game chat.
-The bot should respond in the chat with fishing messages (e.g., weather, catch, or failure messages).
 
+The bot should respond in the chat with fishing messages (e.g., weather, catch, or failure messages).
 
 alot of this is yoinked from https://github.com/Pandaptable/galls but i couldnt get theirs to work 
