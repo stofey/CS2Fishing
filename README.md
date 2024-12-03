@@ -1,22 +1,57 @@
 # CS2Fishing
 An interactive chat "bot" thing that lets you fish ingame in CS2
 
-Add ```-condebug -conclearlog``` to your CS2 launch options
+1. Install Python
+-Go to the official Python website.
+-Download and install the latest stable version of Python for your operating system.
+-During installation, check the box that says "Add Python to PATH" (important!).
+-After installation, verify Python is installed by opening a terminal (Command Prompt) and typing:
+```python --version```
 
-Download and install python 3.13 (https://www.python.org/downloads/) make sure to check the mount path checkbox while installing 
+2. Install Required Python Libraries
+-The bot uses several external libraries, which must be installed using Python's package manager, ```pip```.
+-Open a terminal or Command Prompt.
+-Run the following commands to install the required libraries:
+```pip install asyncio```
+```pip install pydirectinput```
 
-![0_oWVwfeB8G7npLFiu](https://github.com/user-attachments/assets/470c2555-634d-4baf-aa5a-59e18760fa9b)
+3. Download the Bot Files
+Ensure you have the following files saved in the same directory:
+main.py: The main script that handles everything.
+fish.py: Contains logic for fishing actions.
+util.py: Provides helper functions for interacting with the game.
+fishbase.json: A JSON file that contains data about the fish (e.g., names, weights, values).
 
-Change line 7-9 in the main.py and line 44 in util.py to the paths to your locations (the console.log will apear after your first start of the game when adding -condebug to your launch options)
+4. Prepare CS2
+Add ```-condebug -conclearlog``` to your CS2 launch options.
+To ensure the bot works correctly with CS2, follow these steps:
+Enable the Developer Console:
+Launch CS2 and go to Settings > Game > Enable Developer Console. Set it to "Yes".
+Find the ```console.log``` File:
+```S:\SteamLibrary\steamapps\common\Counter-Strike Global Offensive\game\csgo```
 
-In the cfg folder of CS make a new file called message.cfg, needs to be empty 
+Create the ```message.cfg``` File:
+Inside the cfg folder of your CS2 directory (e.g., ...\game\csgo\cfg), create a file named ```message.cfg``` if it doesn’t already exist (should be empty).
+Bind a Key to Execute the ```message.cfg``` File:
+In the CS2 Developer Console, bind a key (e.g., L) to execute the ```message.cfg``` file:
+```bind l "exec message"```
+This key can also be changed in the fish.py file.
 
-In the fish.py at line 48 you can change to whichever button you like (you never actually press the button so put it to something you dont need)
-Add ```bind button exec message``` to your autoexec or just type it in your in game console
+Check the Paths in the Scripts:
+Open ```main.py``` in a text editor and ensure the ```log_dir``` , ```exec_dir``` and ```cs_path``` paths match your CS2 directory:
+```cs_path = "S:\\SteamLibrary\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\console.log" ```
+```log_dir = "S:\\SteamLibrary\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\console.log" ```
+```exec_dir = "S:\\SteamLibrary\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\message.cfg" ```
 
-You can choose the command cooldown by chaning line 19 in main.py to a number you like (i recommend not putting it below 5 since it tends to bug when repeated to quickly)
+Run the Bot:
+Navigate to the folder containing the bot files (main.py, fish.py, etc.) in your terminal:
+Example if on Desktop: ```cd .\Desktop\CS2Fish\```
+Run the bot: ```py main.py```
 
-To actually run it you open Win PowerShell and navigate to the CS2Fish Folder you downloaded (```cd path/to/CS2Fish```)
-Then just type ```py main.py``` to execute and you should be good to go
+Test the Bot:
+
+Open CS2, join a game, and type ```!fish``` in the in-game chat.
+The bot should respond in the chat with fishing messages (e.g., weather, catch, or failure messages).
+
 
 alot of this is yoinked from https://github.com/Pandaptable/galls but i couldnt get theirs to work 
