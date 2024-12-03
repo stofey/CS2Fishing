@@ -1,28 +1,28 @@
 # CS2Fishing
 An interactive chat "bot" thing that lets you fish ingame in CS2
 
-1. Install Python
+Install Python
 -Go to the official Python website.
 -Download and install the latest stable version of Python for your operating system.
 -During installation, check the box that says "Add Python to PATH" (important!).
 -After installation, verify Python is installed by opening a terminal (Command Prompt) and typing:
 ```python --version```
 
-2. Install Required Python Libraries
+Install Required Python Libraries
 -The bot uses several external libraries, which must be installed using Python's package manager, ```pip```.
 -Open a terminal or Command Prompt.
 -Run the following commands to install the required libraries:
 ```pip install asyncio```
 ```pip install pydirectinput```
 
-3. Download the Bot Files
+Download the Bot Files
 Ensure you have the following files saved in the same directory:
 main.py: The main script that handles everything.
 fish.py: Contains logic for fishing actions.
 util.py: Provides helper functions for interacting with the game.
 fishbase.json: A JSON file that contains data about the fish (e.g., names, weights, values).
 
-4. Prepare CS2
+Prepare CS2
 Add ```-condebug -conclearlog``` to your CS2 launch options.
 To ensure the bot works correctly with CS2, follow these steps:
 Enable the Developer Console:
