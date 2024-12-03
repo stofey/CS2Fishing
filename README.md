@@ -5,6 +5,8 @@ Add ```-condebug -conclearlog``` to your CS2 launch options
 
 Download and install python 3.13 (https://www.python.org/downloads/) make sure to check the mount path checkbox while installing 
 
+![0_oWVwfeB8G7npLFiu](https://github.com/user-attachments/assets/470c2555-634d-4baf-aa5a-59e18760fa9b)
+
 Change line 7-9 in the main.py and line 44 in util.py to the paths to your locations (the console.log will apear after your first start of the game when adding -condebug to your launch options)
 
 In the cfg folder of CS make a new file called message.cfg, needs to be empty 
