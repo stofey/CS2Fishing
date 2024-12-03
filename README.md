@@ -18,3 +18,5 @@ You can choose the command cooldown by chaning line 19 in main.py to a number yo
 
 To actually run it you open Win PowerShell and navigate to the CS2Fish Folder you downloaded (```cd path/to/CS2Fish```)
 Then just type ```py main.py``` to execute and you should be good to go
+
+alot of this is yoinked from https://github.com/Pandaptable/galls but i couldnt get theirs to work 
