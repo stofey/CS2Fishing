@@ -1,6 +1,8 @@
 # CS2Fishing
 An interactive chat "bot" thing that lets you fish ingame in CS2
 
+
+
 Install Python
 
 -Go to the official Python website.
@@ -12,6 +14,8 @@ Install Python
 -After installation, verify Python is installed by opening a terminal (Command Prompt) and typing:
 ```python --version```
 
+
+
 Install Required Python Libraries
 
 -The bot uses several external libraries, which must be installed using Python's package manager, ```pip```.
@@ -21,6 +25,8 @@ Install Required Python Libraries
 -Run the following commands to install the required libraries:
 ```pip install asyncio```
 ```pip install pydirectinput```
+
+
 
 Download the Bot Files
 
@@ -33,6 +39,8 @@ Ensure you have the following files saved in the same directory:
 ```util.py```: Provides helper functions for interacting with the game.
 
 fishbase.json: A JSON file that contains data about the fish (e.g., names, weights, values).
+
+
 
 Prepare CS2
 
@@ -60,6 +68,8 @@ In the CS2 Developer Console, bind a key (e.g., L) to execute the ```message.cfg
 
 This key can also be changed in the fish.py file.
 
+
+
 Check the Paths in the Scripts:
 
 Open ```main.py``` in a text editor and ensure the ```log_dir``` , ```exec_dir``` and ```cs_path``` paths match your CS2 directory:
@@ -70,6 +80,8 @@ Open ```main.py``` in a text editor and ensure the ```log_dir``` , ```exec_dir``
 
 ```exec_dir = "S:\\SteamLibrary\\steamapps\\common\\Counter-Strike Global Offensive\\game\\csgo\\cfg\\message.cfg" ```
 
+
+
 Run the Bot:
 
 Navigate to the folder containing the bot files (main.py, fish.py, etc.) in your terminal:
@@ -77,6 +89,8 @@ Navigate to the folder containing the bot files (main.py, fish.py, etc.) in your
 Example if on Desktop: ```cd .\Desktop\CS2Fish\```
 
 Run the bot: ```py main.py```
+
+
 
 Test the Bot:
 
