@@ -9,7 +9,10 @@ Change line 7-9 in the main.py and line 44 in util.py to the paths to your locat
 
 In the cfg folder of CS make a new file called message.cfg, needs to be empty 
 
-You can choose the command cooldown bt chaning line 19 in main.py to a number you like (i recommend not putting it below 5 since it tends to bug when repeated to quickly)
+In the fish.py at line 48 you can change to whichever button you like (you never actually press the button so put it to something you dont need)
+Add "bind "button" exec message" to your autoexec or just type it in your in game console
+
+You can choose the command cooldown by chaning line 19 in main.py to a number you like (i recommend not putting it below 5 since it tends to bug when repeated to quickly)
 
 To actually run it you open Win PowerShell and navigate to the CS2Fish Folder you downloaded (cd path/to/CS2Fish)
 Then just type py main.py to execute and you should be good to go
