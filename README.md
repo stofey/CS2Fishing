@@ -23,10 +23,15 @@ Install Required Python Libraries
 ```pip install pydirectinput```
 
 Download the Bot Files
+
 Ensure you have the following files saved in the same directory:
+
 main.py: The main script that handles everything.
+
 fish.py: Contains logic for fishing actions.
+
 util.py: Provides helper functions for interacting with the game.
+
 fishbase.json: A JSON file that contains data about the fish (e.g., names, weights, values).
 
 Prepare CS2
