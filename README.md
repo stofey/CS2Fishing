@@ -2,6 +2,11 @@
 An interactive chat "bot" thing that lets you fish ingame in CS2
 
 
+Updated !fish command, now has less problems with using one !fish entry in chat twice
+Added !balance which tracks a users total money (will be reset when restarting the program)
+Added !gamble to gamble with the balance u ear from fishing, !gamble x (currently doesnt work with floats number so only int) and !gamble all which will gamble all the balance a user has
+
+
 
 Install Python
 
